@@ -1,10 +1,12 @@
+
 <h1>A solução consiste em uma arquitetura de duas camadas implantada na AWS em várias zonas de disponibilidade.</h1>h1>
 
 A primeira camada consistirá em recursos de “computação”: um balanceador de carga, um grupo de dimensionamento automático e instâncias do EC2. Em seguida, a camada de “dados” será composta por uma instância RDS executando um servidor MySQL.
 
 Aqui está o diagrama arquitetônico
 
-![image](https://github.com/andreelidio/terraform-aws-alb-asg-efs-wordpress/assets/97263573/62c7450e-386b-4cba-9e67-a74858702e78)
+![image](https://github.com/andreelidio/terraform-aws-alb-asg-efs-wordpress/assets/97263573/52c6c6bf-4882-4289-8fce-d5a187265c0d)
+
 
 O ponto de entrada é um Elastic Load Balancer que balanceará e enviará o tráfego para uma série de instâncias do EC2. Nessas instâncias EC2, temos o WordPress instalado e, caso tenhamos uma situação de “alto tráfego”, podemos escalar rapidamente implantando novas máquinas. 
 
