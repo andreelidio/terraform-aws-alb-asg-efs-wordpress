@@ -1,5 +1,5 @@
 
-<h1>A solução consiste em uma arquitetura de duas camadas implantada na AWS em várias zonas de disponibilidade.</h1>h1>
+<h1>A solução consiste em uma arquitetura de duas camadas implantada na AWS em várias zonas de disponibilidade.</h1>
 
 A primeira camada consistirá em recursos de “computação”: um balanceador de carga, um grupo de dimensionamento automático e instâncias do EC2. Em seguida, a camada de “dados” será composta por uma instância RDS executando um servidor MySQL.
 
